@@ -4,8 +4,10 @@ package main
 
 // Import section - these are the packages we'll use
 import (
-	"fmt"  // fmt is used for formatting and printing
-	"time" // time package for working with dates and time
+	"fmt" // fmt is used for formatting and printing
+	// log package for logging errors
+	"time"                // time package for working with dates and time
+	"your-module-name/db" // Import the db package
 )
 
 // main is the entry point function for our program
@@ -54,6 +56,9 @@ func main() {
 	} else {
 		fmt.Printf("10 ÷ 2 = %d\n", result)
 	}
+
+	// Fetching data from the database
+	db.FetchDataFromDB()
 }
 
 // Function declaration
